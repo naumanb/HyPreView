@@ -1,13 +1,13 @@
 Upload the following h5 format hyperspectral data as follows:
 
-raw
-raw.hdr
-darkReference
-darkReference.hdr
-whiteReference
-whiteReference.hdr
-gtMap
-gtMap.hdr
+- raw
+- raw.hdr
+- darkReference
+- darkReference.hdr
+- whiteReference
+- whiteReference.hdr
+- gtMap
+- gtMap.hdr
 
 
 Sample .hdr format:
