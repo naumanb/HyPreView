@@ -16,7 +16,7 @@ Note: Preprocessing steps are applied over the entire image, so the .mat file ca
 - [x] Add Ground-Truth map
 - [ ] Add more preprocessing options
 - [ ] Allow custom window sizes for filtering
-- [ ] Dynamic plot creation (unlimited preprocessing steps
+- [ ] Dynamic plot creation for additional preprocessing steps
 
 ## Demo
 ![](https://github.com/naumanb/HyPreView/blob/main/hypreview.gif)
