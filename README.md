@@ -9,8 +9,8 @@
 - Perform noise estimation and removal using HySime algorithm
 - Visualize the results of preprocessing steps
 
-# Demo
-
+## Demo
+![](https://github.com/naumanb/HyPreView/blob/main/hypreview.gif)
 
 # Dependencies
 - MATLAB
