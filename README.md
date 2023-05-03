@@ -9,6 +9,8 @@
 - Perform noise estimation and removal using HySime algorithm
 - Visualize the results of preprocessing steps
 
+Note: Preprocessing steps are applied over the entire image, so the .mat file can be saved from the MATLAB workspace after analysis
+
 ## Demo
 ![](https://github.com/naumanb/HyPreView/blob/main/hypreview.gif)
 
