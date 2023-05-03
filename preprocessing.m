@@ -281,12 +281,23 @@ function selectProcess(hObject, handles, datain, func, axesnum, graphNum)
            set(axesnum,'XLim',[0 xend],'XTick',[0 xend],'XTickLabel',{handles.nm(1),handles.nm(2)});
         
         case 'hysime'
-            noise = hysimeFunc(handles.current_data{graphNum});
-            hdata = handles.current_data{graphNum} - noise;
+            [Nx, Ny, Nb] = size(handles.current_data{graphNum});
+            x = reshape(handles.current_data{graphNum}, [], Nb)';
+           
+            verbose = 'on';
+            noise_type = 'additive';
+            noise = estNoise(x,noise_type,verbose);
+            hdata = x - noise;
+            
+            hdata = reshape(hdata, Nx, Ny, Nb); 
+
             handles.current_data{graphNum+1} = hdata;
 
+            row = handles.current_row;
+            col = handles.current_col;
+            
             axes(axesnum);
-            plot(squeeze(hdata),'Linewidth',1);
+            plot(squeeze(hdata(row,col,:)),'Linewidth',1);
             xend = size(hdata,3);
             set(axesnum,'XLim',[0 xend],'XTick',[0 xend],'XTickLabel',{handles.nm(1),handles.nm(2)});
            
