@@ -21,12 +21,12 @@ Note: Preprocessing steps are applied over the entire image, so the .mat file ca
 ## Demo
 ![](https://github.com/naumanb/HyPreView/blob/main/hypreview.gif)
 
-# Dependencies
+## Dependencies
 - MATLAB
 - Image Processing Toolbox
 - Signal Processing Toolbox
 
-# Usage
+## Usage
 1. Clone the repository or download the project files to your local machine.
 2. Make sure you have MATLAB and the required toolboxes installed.
 3. Open the HyPreView MATLAB script.
@@ -36,7 +36,7 @@ Note: Preprocessing steps are applied over the entire image, so the .mat file ca
 7. Apply preprocessing methods using the dropdown menu and observe the results in the plots.
 8. Iterate through different preprocessing techniques to analyze their effects on the data.
 
-# Functions
+## Functions
 - `spectraExtract`: Extracts spectral data, dark and white reference, and ground truth map from the input data.
 - `calibrate`: Calibrates raw hyperspectral data using dark and white reference.
 - `hysimeFunc`: Estimates noise in hyperspectral data using the HySime algorithm.
