@@ -11,6 +11,13 @@
 
 Note: Preprocessing steps are applied over the entire image, so the .mat file can be saved from the MATLAB workspace after analysis
 
+## To-do
+
+- [x] Add Ground-Truth map
+- [ ] Add more preprocessing options
+- [ ] Allow custom window sizes for filtering
+- [ ] Dynamic plot creation (unlimited preprocessing steps
+
 ## Demo
 ![](https://github.com/naumanb/HyPreView/blob/main/hypreview.gif)
 
